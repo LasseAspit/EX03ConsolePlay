@@ -6,7 +6,7 @@ namespace EX05Arithmetic
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("velkommen til lommeregner v1 \nvenligst intast de 2 numre du vil have lagt sammen\n");
+            Console.WriteLine("velkommen til lommeregner v1 \nvenligst indtast de 2 numre du vil have lagt sammen\n");
             Console.Write("intast tal 1: ");
             double tal1 = Convert.ToDouble(Console.ReadLine());
             Console.Write("intast tal 2: ");

@@ -5,11 +5,13 @@ VisualStudioVersion = 16.0.31321.278
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EX03ConsolePlay", "EX03ConsolePlay\EX03ConsolePlay.csproj", "{A9619947-15C7-4227-82AA-7AEE5CE6CC05}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EX04ReadLine", "EX04ReadLine\EX04ReadLine.csproj", "{C29F852A-BB57-402D-BCB7-43B4B7AFAFFE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EX04ReadLine", "EX04ReadLine\EX04ReadLine.csproj", "{C29F852A-BB57-402D-BCB7-43B4B7AFAFFE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EX05Arithmetic", "EX05Arithmetic\EX05Arithmetic.csproj", "{D6F4C14A-1CE6-47D3-80BD-E2406DEB2844}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EX05Arithmetic", "EX05Arithmetic\EX05Arithmetic.csproj", "{D6F4C14A-1CE6-47D3-80BD-E2406DEB2844}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EX06ComparisonOperators.", "EX06ComparisonOperators\EX06ComparisonOperators..csproj", "{744800A9-5EEE-4E9A-ACF2-48B46A1FD8B4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EX06ComparisonOperators.", "EX06ComparisonOperators\EX06ComparisonOperators..csproj", "{744800A9-5EEE-4E9A-ACF2-48B46A1FD8B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EX07SelectionIfElse.", "EX07SelectionIfElse\EX07SelectionIfElse..csproj", "{A7425692-A4F9-4F89-8E60-23F8AA43BFE2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{744800A9-5EEE-4E9A-ACF2-48B46A1FD8B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{744800A9-5EEE-4E9A-ACF2-48B46A1FD8B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{744800A9-5EEE-4E9A-ACF2-48B46A1FD8B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7425692-A4F9-4F89-8E60-23F8AA43BFE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7425692-A4F9-4F89-8E60-23F8AA43BFE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7425692-A4F9-4F89-8E60-23F8AA43BFE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7425692-A4F9-4F89-8E60-23F8AA43BFE2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

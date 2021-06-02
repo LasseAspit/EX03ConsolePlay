@@ -20,10 +20,10 @@ namespace EX04ReadLine
 
 
             //areal
-            Console.WriteLine("intast de to sider du vil have arealet af");
-            Console.WriteLine("intast side 1");
+            Console.WriteLine("indtast de to sider du vil have arealet af");
+            Console.WriteLine("indtast side 1");
             int int1 = int.Parse(Console.ReadLine());
-            Console.WriteLine("intast side 2");
+            Console.WriteLine("indtast side 2");
             int int2 = int.Parse(Console.ReadLine());
             Console.WriteLine($"arealet af figuren er {int1 * int2}");
 
