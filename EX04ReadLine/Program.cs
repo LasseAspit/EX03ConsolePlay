@@ -25,7 +25,7 @@ namespace EX04ReadLine
             int int1 = int.Parse(Console.ReadLine());
             Console.WriteLine("intast side 2");
             int int2 = int.Parse(Console.ReadLine());
-            Console.WriteLine("arealet af figuren er " + int1 * int2);
+            Console.WriteLine($"arealet af figuren er {int1 * int2}");
 
 
             //ABC
