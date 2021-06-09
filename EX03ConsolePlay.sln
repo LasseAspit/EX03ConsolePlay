@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EX10Switch.", "EX10Switch\E
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EX11While", "EX11While\EX11While.csproj", "{75316236-1010-4670-9AB4-67068E7A01D0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EX12ForLoop", "EX12ForLoop\EX12ForLoop.csproj", "{8DB974B0-27B0-41B4-B9BF-F88CE6E9FD31}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{75316236-1010-4670-9AB4-67068E7A01D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{75316236-1010-4670-9AB4-67068E7A01D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{75316236-1010-4670-9AB4-67068E7A01D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DB974B0-27B0-41B4-B9BF-F88CE6E9FD31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DB974B0-27B0-41B4-B9BF-F88CE6E9FD31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DB974B0-27B0-41B4-B9BF-F88CE6E9FD31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DB974B0-27B0-41B4-B9BF-F88CE6E9FD31}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
