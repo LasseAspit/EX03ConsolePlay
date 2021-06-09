@@ -94,58 +94,28 @@ namespace EX07SelectionIfElse_
 
             }
 
-            void stigende()
+
+
+
+            Console.WriteLine("velkommen tíl mit program :) \n vælg venligst en funktion for at starte");
+
+            Console.WriteLine("tast bogstavet på det program du ønsker at starte \nA) velkomst \nB) porto \nC) plusminus \nD) stigende \nE) BMI udregner");
+
+
+            string chosen = Console.ReadLine();
+            //velkomst
+            if (chosen == "a")
             {
+                Console.WriteLine("skriv venligst dit fornavn");
+                string fornavn = Console.ReadLine();
+                Console.WriteLine("skriv venligst dit efternavn");
+                string efternavn = Console.ReadLine();
 
-                //stigende orden
-
-                Console.WriteLine("velkommen til stigende tal. Skriv to heltal så sætter vi dem i stigende rækkefølge for dig");
-                Console.Write("indtast det første tal: ");
-                int stigende1 = Convert.ToInt32(Console.ReadLine());
-                Console.Write("indtast det andet tal: ");
-                int stigende2 = Convert.ToInt32(Console.ReadLine());
-
-
-                if (stigende1 > stigende2)
-                {
-                    Console.WriteLine(stigende2);
-                    Console.WriteLine(stigende1);
-                }
-                else
-                {
-                    Console.WriteLine(stigende1);
-                    Console.WriteLine(stigende2);
-                }
+                Console.WriteLine($"velkommen {fornavn} {efternavn}");
 
             }
-
-
-
-            void plusminus()
-            {
-                //plus minus
-                Console.WriteLine("velkommen til plus minus. Indtast et tal så checkker vi om det er over eller under 0");
-                Console.Write("indtast dit tal: ");
-                int plusminus = Convert.ToInt32(Console.ReadLine());
-
-                if (plusminus > 0)
-                {
-                    Console.WriteLine($"{plusminus} er et plus tal");
-                }
-                else if (plusminus == 0)
-                {
-                    Console.WriteLine("dit tal er nul");
-                }
-                else
-                {
-                    Console.WriteLine($"{plusminus} er et negativt tal");
-                }
-
-            }
-            //porto
-
-
-            void porto()
+            // porto
+            else if (chosen == "b")
             {
                 int price = 0;
 
@@ -199,27 +169,94 @@ namespace EX07SelectionIfElse_
                     Console.WriteLine($"det bliver {price}");
                 }
             }
-            Console.WriteLine("velkommen tíl mit program :) \n vælg venligst en funktion for at starte");
-
-            Console.WriteLine("tast bogstavet på det program du ønsker at starte \nA) porto \nB) plusminus \nC) stigende");
-
-
-            string chosen = Console.ReadLine();
-
-            if (chosen == "a")
-            {
-                porto();
-            }
-            else if(chosen == "b")
-            {
-                plusminus();
-            }
+            //plusminus
             else if(chosen == "c")
             {
-                stigende();
+                //plus minus
+                Console.WriteLine("velkommen til plus minus. Indtast et tal så checkker vi om det er over eller under 0");
+                Console.Write("indtast dit tal: ");
+                int plusminus = Convert.ToInt32(Console.ReadLine());
+
+                if (plusminus > 0)
+                {
+                    Console.WriteLine($"{plusminus} er et plus tal");
+                }
+                else if (plusminus == 0)
+                {
+                    Console.WriteLine("dit tal er nul");
+                }
+                else
+                {
+                    Console.WriteLine($"{plusminus} er et negativt tal");
+                }
+            }
+            // stigende
+            else if(chosen == "d")
+            {
+                //stigende orden
+
+                Console.WriteLine("velkommen til stigende tal. Skriv to heltal så sætter vi dem i stigende rækkefølge for dig");
+                Console.Write("indtast det første tal: ");
+                int stigende1 = Convert.ToInt32(Console.ReadLine());
+                Console.Write("indtast det andet tal: ");
+                int stigende2 = Convert.ToInt32(Console.ReadLine());
+
+
+                if (stigende1 > stigende2)
+                {
+                    Console.WriteLine(stigende2);
+                    Console.WriteLine(stigende1);
+                }
+                else
+                {
+                    Console.WriteLine(stigende1);
+                    Console.WriteLine(stigende2);
+                }
+
+            }
+            //BMI
+            else if(chosen == "e")
+            {
+                Console.WriteLine("velkommen til BMI udregneren");
+
+                Console.WriteLine("indtast venligst din vægt: ");
+                double weight = Convert.ToDouble(Console.ReadLine());
+
+                Console.WriteLine("indatast venligst din højde i meter: ");
+                double height = Convert.ToDouble(Console.ReadLine());
+
+
+                double BMI = weight / (height * height);
+
+
+                if(BMI < 18.5)
+                {
+                    Console.WriteLine("du vejer for lidt");
+                }
+                else if(BMI > 18.5 && BMI < 25)
+                {
+                    Console.WriteLine("din vægt er passende");
+                }
+                else if (BMI > 25 && BMI < 30)
+                {
+                    Console.WriteLine("du er overvægtig");
+                }
+                else if (BMI > 30)
+                {
+                    Console.WriteLine("du er overvægtig");
+                }
+                else
+                {
+                    Console.WriteLine("svar ikke glydigt");
+                }
             }
 
-           
+
+            else
+            {
+                Console.Write("indtast venligt et gyldigt bostav");
+
+            }
 
         }
     }
