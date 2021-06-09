@@ -227,7 +227,7 @@ namespace EX07SelectionIfElse_
 
 
                 double BMI = weight / (height * height);
-
+                Console.WriteLine(BMI);
 
                 if(BMI < 18.5)
                 {
@@ -239,11 +239,11 @@ namespace EX07SelectionIfElse_
                 }
                 else if (BMI > 25 && BMI < 30)
                 {
-                    Console.WriteLine("du er overvægtig");
+                    Console.WriteLine("du er lidt overvægtig");
                 }
                 else if (BMI > 30)
                 {
-                    Console.WriteLine("du er overvægtig");
+                    Console.WriteLine("du er meget overvægtig");
                 }
                 else
                 {
