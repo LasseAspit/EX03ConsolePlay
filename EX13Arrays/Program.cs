@@ -43,8 +43,18 @@ namespace EX13Arrays_
 
             Array.Reverse(numbers);
 
+            Console.WriteLine("");
+
             for (int i = 0; i < numbers.Length; i++)
             {
+                Console.Write(numbers[i] + "\t");
+            }
+
+            Console.WriteLine("");
+
+            for (int i = 0; i < numbers.Length; i++)
+            {
+                numbers[i] = numbers[i] + 5;
                 Console.Write(numbers[i] + "\t");
             }
 
