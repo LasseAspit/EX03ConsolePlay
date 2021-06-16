@@ -74,7 +74,7 @@ namespace EX15Time_
 
                 Console.WriteLine("Vil du fortsætte? Y/N");
                 string fortsæt = Console.ReadLine();
-                if (fortsæt == "Y" || fortsæt == "y")
+                if (fortsæt == "Y" || fortsæt == "y" || fortsæt == "yes")
                 {
                     Console.WriteLine("");
                 }
