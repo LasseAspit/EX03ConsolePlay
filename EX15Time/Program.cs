@@ -10,7 +10,7 @@ namespace EX15Time_
      
             bool exit = false;
             int år = DateTime.Now.Year;
-            DateTime Jul = new DateTime(år, 12, 24);
+            DateTime Jul = new DateTime(år, 12, 24, 18, 00, 00);
 
             if (DateTime.Now.Month >= 6)
             {
@@ -28,28 +28,37 @@ namespace EX15Time_
                 
                 DateTime tidTimer = DateTime.Now;
 
-                Console.WriteLine($"det er i dag den: {tidTimer.ToShortDateString()}");
-                Console.WriteLine($"klokken er nu: {tidTimer.ToShortTimeString()}\n");
 
                 Console.WriteLine("vælg et program at køre: \n");
 
-                Console.WriteLine("A) tid til jul \nB) tid til fødselsdag\nC) tid til specifikt tidspunkt");
+                Console.WriteLine("A) tiden nu\nB) tid til jul \nC) tid til fødselsdag\nD) tid til specifikt tidspunkt");
 
                 string valg = Console.ReadLine();
 
                 switch (valg)
                 {
                     case "a":
-                        TimeSpan tidTilJul = Jul.Subtract(DateTime.Now);
-                        Console.WriteLine(tidTilJul);
+                        Console.WriteLine($"det er i dag den: {tidTimer.ToShortDateString()}");
+                        Console.WriteLine($"klokken er nu: {tidTimer.ToShortTimeString()}\n");
                         break;
 
                     case "b":
+                        /*
+                        TimeSpan tidTilJul = Jul.Subtract(DateTime.Now);
+                        Console.WriteLine(tidTilJul);
+                        */
+
+                        TimeSpan tidTilJul = Jul - DateTime.Now;
+                        Console.WriteLine($"der er nu {tidTilJul.Days} dage, {tidTilJul.Hours} timer, {tidTilJul.Minutes} minutter og {tidTilJul.Seconds} sekunder til jul");
+                        break;
+
+
+                    case "c":
                         TimeSpan tidtilfødselsdag = fødselsdag.Subtract(DateTime.Now);
                         Console.WriteLine(tidtilfødselsdag);
                         break;
 
-                    case "c":
+                    case "d":
                         Console.WriteLine("skriv venligst den dato du vil vide hvor lang tid der er til, (YYYY, MM, DD)");
                         DateTime brugerTid = DateTime.Parse(Console.ReadLine());
                         TimeSpan brugerTidMath = brugerTid.Subtract(DateTime.Now);
