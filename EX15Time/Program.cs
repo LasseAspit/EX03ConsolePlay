@@ -49,17 +49,17 @@ namespace EX15Time_
                         */
 
                         TimeSpan tidTilJul = Jul - DateTime.Now;
-                        Console.WriteLine($"der er nu {tidTilJul.Days} dage, {tidTilJul.Hours} timer, {tidTilJul.Minutes} minutter og {tidTilJul.Seconds} sekunder til jul");
+                        Console.WriteLine($"Der er nu {tidTilJul.Days} dage, {tidTilJul.Hours} timer, {tidTilJul.Minutes} minutter og {tidTilJul.Seconds} sekunder til jul");
                         break;
 
 
                     case "c":
                         TimeSpan tidtilfødselsdag = fødselsdag.Subtract(DateTime.Now);
-                        Console.WriteLine(tidtilfødselsdag);
+                        Console.WriteLine($"Der er {tidtilfødselsdag.Days} dage og {tidtilfødselsdag.Hours} timer til min fødselsdag.");
                         break;
 
                     case "d":
-                        Console.WriteLine("skriv venligst den dato du vil vide hvor lang tid der er til, (YYYY, MM, DD)");
+                        Console.WriteLine("Skriv venligst den dato du vil vide hvor lang tid der er til, (YYYY, MM, DD)");
                         DateTime brugerTid = DateTime.Parse(Console.ReadLine());
                         TimeSpan brugerTidMath = brugerTid.Subtract(DateTime.Now);
                         Console.WriteLine($"der er {brugerTidMath.Days} dage og {brugerTidMath.Hours} timer til den dato du har skrevet");
@@ -72,8 +72,17 @@ namespace EX15Time_
                         break;
                 }
 
-
-                exit = true;
+                Console.WriteLine("Vil du fortsætte? Y/N");
+                string fortsæt = Console.ReadLine();
+                if (fortsæt == "Y" || fortsæt == "y")
+                {
+                    Console.WriteLine("");
+                }
+               else
+                {
+                    exit = true;
+                }
+               
             }
         }
     }
