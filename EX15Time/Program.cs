@@ -55,7 +55,7 @@ namespace EX15Time_
                         TimeSpan brugerTidMath = brugerTid.Subtract(DateTime.Now);
                         Console.WriteLine(brugerTidMath);
 
-
+                        
                         break;
 
                     default:
