@@ -53,7 +53,7 @@ namespace EX15Time_
                         Console.WriteLine("skriv venligst den dato du vil vide hvor lang tid der er til, (YYYY, MM, DD)");
                         DateTime brugerTid = DateTime.Parse(Console.ReadLine());
                         TimeSpan brugerTidMath = brugerTid.Subtract(DateTime.Now);
-                        Console.WriteLine(brugerTidMath);
+                        Console.WriteLine($"der er {brugerTidMath.Days} dage og {brugerTidMath.Hours} timer til den dato du har skrevet");
 
                         
                         break;
