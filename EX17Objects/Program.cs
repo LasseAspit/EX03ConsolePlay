@@ -91,11 +91,11 @@ namespace EX17Objects_
 
                 if(cars[bilvalg].StartCar() == true)
                 {
-                    Console.WriteLine("Blien startede på første forsøg");
+                    Console.WriteLine("Bilen startede på første forsøg");
                 }
                 else
                 {
-                    Console.WriteLine("bilen startede ikke");
+                    Console.WriteLine("Bilen startede ikke");
                 }
 
             }
