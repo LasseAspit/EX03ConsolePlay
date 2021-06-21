@@ -8,11 +8,11 @@ namespace EX18SimpleClasses
 {
     class Box
     {
-        int Højde;
-        int Længde;
-        int Bredde;
-        int Volume;
-        int Surface;
+        public int Højde { get; set; }
+        public int Længde { get; set; }
+        public int Bredde { get; set; }
+        private int Volume { get; set; }
+        private int Surface { get; set; }   
 
 
         public Box(int højde, int længde, int bredde)
@@ -31,8 +31,8 @@ namespace EX18SimpleClasses
 
         public void PrintInfo()
         {
-            VolumeCalc();
             SurfaceCalc();
+            VolumeCalc();
             Console.WriteLine($"Kassen har følgende mål: \nhøjde: {Højde}\nlængde: {Længde}\nbredde: {Bredde}\nVolume: {Volume}\noverflade: {Surface}");
         }
 
