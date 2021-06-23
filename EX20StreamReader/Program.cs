@@ -39,64 +39,10 @@ namespace EX20StreamReader_
 
 
                 }
-
-
-
-
                 return longList;
             }
 
-
-
-
-            /*
-
-
-            double sum = 0;
-            double counter = 0;
-
-            List<double> values = new List<double>();
             
-
-            using (StreamReader sr = new StreamReader("Values.txt"))
-            {
-
-                string line;
-
-                while(sr.EndOfStream != true)
-                {
-                    line = sr.ReadLine();
-                    Console.WriteLine(line);
-
-                    double lineDouble = Convert.ToDouble(line);
-                    values.Add(lineDouble);
-
-
-                    
-                    counter++;
-                    sum = sum + Convert.ToDouble(line);
-                    
-                }
-
-
-
-            }
-            
-            Console.WriteLine("");
-            Console.WriteLine($"Summen er: {sum}");
-            Console.WriteLine($"Gennemsnittet er: {sum / counter}");
-            
-
-            foreach(double value in values)
-            {
-                sum = sum + value;
-                counter++;
-            }
-            Console.WriteLine(sum);
-            Console.WriteLine(sum /counter);
-
-            */
-
 
             List<double> list = getNumbers("Values.txt");
 
@@ -105,6 +51,37 @@ namespace EX20StreamReader_
                 Console.WriteLine(value);
             }
 
+            Console.WriteLine("");
+
+            List<string> list2 = new List<string>();
+            using (StreamReader sr = new StreamReader("Boxes.txt"))
+            {
+
+                string line;
+                List<Box> boxlist = new List<Box>();
+                while (sr.EndOfStream != true)
+                {
+                    line = sr.ReadLine();
+                    list2.Add(line);
+                    Console.WriteLine(line);
+                    foreach (string value in list2)
+
+                    {
+                        string[] arr = value.Split(',');
+                        Box box = new Box(Convert.ToInt32(arr[0]), Convert.ToInt32(arr[1]), Convert.ToInt32(arr[2]));
+                        boxlist.Add(box);
+                    }
+                } 
+
+            foreach(Box value in boxlist)
+                {
+                    value.PrintInfo();
+                    Console.WriteLine("");
+                }
+            }
+
+
+            
 
 
         }
