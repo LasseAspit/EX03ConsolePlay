@@ -13,7 +13,7 @@ namespace EX20StreamReader_
         static void Main(string[] args)
         {
             
-            static List<double> getNumbers(string url)
+            static List<double> GetNumbers(string url)
             {
                 List<double> longList = new List<double>();
 
@@ -42,9 +42,10 @@ namespace EX20StreamReader_
                 return longList;
             }
 
-            
 
-            List<double> list = getNumbers("Values.txt");
+
+
+            List<double> list = GetNumbers("Values.txt");
 
             foreach(double value in list)
             {
@@ -52,13 +53,13 @@ namespace EX20StreamReader_
             }
 
             Console.WriteLine("");
-
+            List<Box> boxlist = new List<Box>();
             List<string> list2 = new List<string>();
             using (StreamReader sr = new StreamReader("Boxes.txt"))
             {
 
                 string line;
-                List<Box> boxlist = new List<Box>();
+                
                 while (sr.EndOfStream != true)
                 {
                     line = sr.ReadLine();
@@ -79,9 +80,19 @@ namespace EX20StreamReader_
                     Console.WriteLine("");
                 }
             }
-
-
-            
+            int smallestWidth = 1000000000;
+            foreach(Box value in boxlist)
+            {
+                if(value.Bredde < smallestWidth)
+                {
+                    smallestWidth = value.Bredde;
+                }
+                else
+                {
+                    Console.WriteLine("den største bredde er større end 1000000000");
+                }
+            }
+            Console.WriteLine($"den mindst bredde er {smallestWidth}");
 
 
         }
