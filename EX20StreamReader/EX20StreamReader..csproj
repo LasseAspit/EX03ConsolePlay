@@ -6,4 +6,10 @@
     <RootNamespace>EX20StreamReader_</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Update="Values.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
